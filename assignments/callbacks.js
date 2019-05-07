@@ -2,32 +2,47 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
-/* 
 
-  //Given this problem: 
-  
-  function firstItem(arr, cb) {
-    // firstItem passes the first item of the given array to the callback function.
-  }
 
-  // Potential Solution:
+// //Given this problem: 
 
-  // Higher order function using "cb" as the call back
-  function firstItem(arr, cb) {
-    return cb(arr[0]);
-  }
+function firstItem(arr, cb) {
+  // firstItem passes the first item of the given array to the callback function.
+  return cb(arr[0]);
+}
 
-  // Function invocation 
-  firstItem(items, function(first) {
-    console.log(first)
-  });
+// Higher order function using "cb" as the call back
 
-*/
+// Function invocation 
+firstItem(items, function (first) {
+  console.log(first)
+});
+
+
+
 
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
+  return cb(arr)
 }
+
+let len = () => {
+  return items.length
+}
+
+console.log(getLength(items, len))
+
+
+
+
+
+
+
+
+
+
+
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
