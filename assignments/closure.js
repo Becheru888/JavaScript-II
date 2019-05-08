@@ -2,6 +2,25 @@
 // Write a simple closure of your own creation.  Keep it simple!
 
 
+
+// ====== global scope
+let value = 'Number'
+// ====== global scope
+function val(){
+
+//function scope
+if(value === 'Number'){
+  //local scope
+  console.log(value)
+}
+}
+// ====== global scope
+val()
+
+
+
+
+
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
